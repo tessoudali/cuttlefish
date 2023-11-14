@@ -55,7 +55,7 @@ gem "flatui-rails", git: "https://github.com/iffyuva/flatui-rails.git",
                     ref: "3d3c423"
 gem "fog-aws"
 gem "font-awesome-rails"
-gem "friendly_id"
+gem "friendly_id", ">= 5.5.1"
 gem "google-analytics-rails"
 # Looks like it's a bit of a pain to upgrade graphql. So just locking
 # the version for the time being
