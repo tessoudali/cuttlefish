@@ -96,7 +96,7 @@ gem "rest-client"
 # gem 'debugger'
 
 # We want to be able to use rack-mini-profiler in production
-gem "rack-mini-profiler"
+gem "rack-mini-profiler", ">= 3.2.0"
 
 # For authorization with json web tokens
 gem "jwt"
