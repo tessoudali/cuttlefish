@@ -38,7 +38,7 @@ gem "eventmachine"
 # We're using a very old version of redis currently which forces us stay at version 5 of sidekiq
 # TODO: Update redis
 gem "sidekiq", "~> 5.1"
-gem "sinatra", require: nil
+gem "sinatra", ">= 4.0.0", require: nil
 
 gem "batch-loader"
 gem "coderay"
