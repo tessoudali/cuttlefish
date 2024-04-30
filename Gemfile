@@ -32,7 +32,7 @@ end
 
 gem "jquery-rails"
 
-gem "jbuilder"
+gem "jbuilder", ">= 2.12.0"
 
 gem "eventmachine"
 # We're using a very old version of redis currently which forces us stay at version 5 of sidekiq
