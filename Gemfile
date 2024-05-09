@@ -76,7 +76,7 @@ gem "minitar"
 gem "newrelic_rpm"
 gem "nokogiri"
 gem "premailer"
-gem "pundit"
+gem "pundit", ">= 2.3.2"
 gem "user_agent_parser"
 gem "virtus"
 
