@@ -108,10 +108,10 @@ group :development do
   gem "capistrano", "~> 2"
   gem "faker"
   gem "graphiql-rails"
-  gem "rubocop", require: false
-  gem "rubocop-graphql", require: false
-  gem "rubocop-rails", require: false
-  gem "rubocop-rspec", require: false
+  gem "rubocop", ">= 1.56.1", require: false
+  gem "rubocop-graphql", ">= 1.5.0", require: false
+  gem "rubocop-rails", ">= 2.21.0", require: false
+  gem "rubocop-rspec", ">= 2.24.0", require: false
   gem "rvm-capistrano", ">= 1.5.6", require: false
   gem "spring"
   gem "spring-commands-rspec"
@@ -136,14 +136,14 @@ group :test do
   gem "database_cleaner"
   gem "rails-controller-testing"
   gem "vcr"
-  gem "webmock"
+  gem "webmock", ">= 3.19.0"
 end
 
 group :development, :test do
   gem "capybara"
   gem "rspec-activemodel-mocks"
   gem "rspec-rails"
-  gem "selenium-webdriver"
+  gem "selenium-webdriver", ">= 4.12.0"
   # For resizing screenshots
   gem "rmagick"
 end
