@@ -108,10 +108,10 @@ group :development do
   gem "capistrano", "~> 2"
   gem "faker"
   gem "graphiql-rails"
-  gem "rubocop", require: false
+  gem "rubocop", ">= 1.66.0", require: false
   gem "rubocop-graphql", require: false
   gem "rubocop-rails", require: false
-  gem "rubocop-rspec", require: false
+  gem "rubocop-rspec", ">= 3.0.0", require: false
   gem "rvm-capistrano", ">= 1.5.6", require: false
   gem "spring"
   gem "spring-commands-rspec"
