@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gem "dotenv-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.0"
+gem "rails", "~> 7.0.0"
 
 gem "pg"
 
@@ -13,7 +13,7 @@ gem "pg"
 # in production environments by default.
 group :assets do
   # Locking sass-rails for the time being to avoid having to upgrade sprockets from 3->4
-  gem "sass-rails", "~> 5.0"
+  gem "sass-rails", "~> 6.0", ">= 6.0.0"
   # Don't upgrade to Bootstrap 3. It's already responsive, for example, so
   # there's a bunch of things we need to do for the upgrade
   gem "bootstrap-sass", "~> 2.0"
@@ -37,8 +37,8 @@ gem "jbuilder"
 gem "eventmachine"
 # We're using a very old version of redis currently which forces us stay at version 5 of sidekiq
 # TODO: Update redis
-gem "sidekiq", "~> 5.1"
-gem "sinatra", require: nil
+gem "sidekiq", "~> 8.0", ">= 8.0.0"
+gem "sinatra", ">= 4.0.0", require: nil
 
 gem "batch-loader"
 gem "coderay"
@@ -107,7 +107,7 @@ gem "acme-client"
 group :development do
   gem "capistrano", "~> 2"
   gem "faker"
-  gem "graphiql-rails"
+  gem "graphiql-rails", ">= 1.10.0"
   gem "rubocop", require: false
   gem "rubocop-graphql", require: false
   gem "rubocop-rails", require: false
