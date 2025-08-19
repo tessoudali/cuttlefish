@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gem "dotenv-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.0"
+gem "rails", "~> 7.1.5", ">= 7.1.5.2"
 
 gem "pg"
 
@@ -55,7 +55,7 @@ gem "flatui-rails", git: "https://github.com/iffyuva/flatui-rails.git",
                     ref: "3d3c423"
 gem "fog-aws"
 gem "font-awesome-rails"
-gem "friendly_id"
+gem "friendly_id", ">= 5.5.1"
 gem "google-analytics-rails"
 # Looks like it's a bit of a pain to upgrade graphql. So just locking
 # the version for the time being
@@ -133,7 +133,7 @@ end
 group :test do
   gem "climate_control"
   gem "coveralls", require: false
-  gem "database_cleaner"
+  gem "database_cleaner", ">= 2.1.0"
   gem "rails-controller-testing"
   gem "vcr"
   gem "webmock"
