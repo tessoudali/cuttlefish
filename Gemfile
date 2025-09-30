@@ -2,10 +2,10 @@
 
 source "https://rubygems.org"
 
-gem "dotenv-rails"
+gem "dotenv-rails", ">= 3.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.0"
+gem "rails", "~> 6.1.7", ">= 6.1.7.5"
 
 gem "pg"
 
@@ -13,7 +13,7 @@ gem "pg"
 # in production environments by default.
 group :assets do
   # Locking sass-rails for the time being to avoid having to upgrade sprockets from 3->4
-  gem "sass-rails", "~> 5.0"
+  gem "sass-rails", "~> 6.0", ">= 6.0.0"
   # Don't upgrade to Bootstrap 3. It's already responsive, for example, so
   # there's a bunch of things we need to do for the upgrade
   gem "bootstrap-sass", "~> 2.0"
@@ -26,7 +26,7 @@ group :assets do
   gem "therubyracer", platforms: :ruby
 
   # Problem with compiling assets in production otherwise
-  gem "less-rails", "4.0.0"
+  gem "less-rails", "5.0.0"
   gem "uglifier"
 end
 
@@ -37,24 +37,24 @@ gem "jbuilder"
 gem "eventmachine"
 # We're using a very old version of redis currently which forces us stay at version 5 of sidekiq
 # TODO: Update redis
-gem "sidekiq", "~> 5.1"
-gem "sinatra", require: nil
+gem "sidekiq", "~> 6.0", ">= 6.0.0"
+gem "sinatra", ">= 3.2.0", require: nil
 
 gem "batch-loader"
 gem "coderay"
-gem "devise"
-gem "devise_invitable"
+gem "devise", ">= 4.9.3"
+gem "devise_invitable", ">= 2.0.9"
 gem "dkim"
 gem "dnsbl-client"
-gem "factory_bot_rails"
+gem "factory_bot_rails", ">= 6.3.0"
 gem "file-tail"
 gem "foreman"
-gem "formtastic"
+gem "formtastic", ">= 3.0.0"
 # Use pull request that has needed Rails 4 improvements https://github.com/pkurek/flatui-rails/pull/25
 gem "flatui-rails", git: "https://github.com/iffyuva/flatui-rails.git",
                     ref: "3d3c423"
 gem "fog-aws"
-gem "font-awesome-rails"
+gem "font-awesome-rails", ">= 4.7.0.9"
 gem "friendly_id"
 gem "google-analytics-rails"
 # Looks like it's a bit of a pain to upgrade graphql. So just locking
@@ -64,7 +64,7 @@ gem "graphql", "~> 1.12.0"
 # And the same for graphql-client though I'm guessing that should be easier to upgrade than graphql
 gem "graphql-client", "~> 0.16.0"
 gem "graphql-guard"
-gem "haml-rails"
+gem "haml-rails", ">= 3.0.0"
 gem "honeybadger"
 gem "syslog_protocol"
 gem "will_paginate"
@@ -96,7 +96,7 @@ gem "rest-client"
 # gem 'debugger'
 
 # We want to be able to use rack-mini-profiler in production
-gem "rack-mini-profiler"
+gem "rack-mini-profiler", ">= 3.2.0"
 
 # For authorization with json web tokens
 gem "jwt"
@@ -107,17 +107,17 @@ gem "acme-client"
 group :development do
   gem "capistrano", "~> 2"
   gem "faker"
-  gem "graphiql-rails"
+  gem "graphiql-rails", ">= 1.10.0"
   gem "rubocop", require: false
   gem "rubocop-graphql", require: false
-  gem "rubocop-rails", require: false
+  gem "rubocop-rails", ">= 2.21.0", require: false
   gem "rubocop-rspec", require: false
   gem "rvm-capistrano", ">= 1.5.6", require: false
   gem "spring"
   gem "spring-commands-rspec"
   # Webrick gives us annoying warnings "could not determine content-length
   # of response body"
-  gem "thin"
+  gem "thin", ">= 2.0.0"
 
   gem "guard"
   gem "guard-rspec"
@@ -140,9 +140,9 @@ group :test do
 end
 
 group :development, :test do
-  gem "capybara"
+  gem "capybara", ">= 3.40.0"
   gem "rspec-activemodel-mocks"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 6.0.4"
   gem "selenium-webdriver"
   # For resizing screenshots
   gem "rmagick"
