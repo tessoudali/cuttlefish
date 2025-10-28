@@ -30,7 +30,7 @@ group :assets do
   gem "uglifier"
 end
 
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.6.1"
 
 gem "jbuilder"
 
