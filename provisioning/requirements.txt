@@ -4,3 +4,4 @@
 # pip install -r requirements.txt
 
 ansible==2.8.17
+cryptography>=46.0.5 # not directly required, pinned by Snyk to avoid a vulnerability
