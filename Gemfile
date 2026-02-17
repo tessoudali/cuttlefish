@@ -102,7 +102,7 @@ gem "rack-mini-profiler"
 gem "jwt"
 
 # For generating ssl certificates for custom tracking domains
-gem "acme-client"
+gem "acme-client", ">= 2.0.15"
 
 group :development do
   gem "capistrano", "~> 2"
